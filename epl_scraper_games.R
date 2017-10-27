@@ -82,6 +82,8 @@ for (i in ListofURL){
     end = 8)
   db$Opponent[1] = db$team[2]
   db$Opponent[2] = db$team[1]
+  db$GoalsAllowed[1] = as.integer(as.character(db$Goals[2]))
+  db$GoalsAllowed[2] = as.integer(as.character(db$Goals[1]))
   db$GameID = paste0(db$team[1],'v',db$team[2],db$date[1])
   db$home_away = if_else(db$team==db$team[1],'home','away')
   if(count==0){ 
@@ -96,12 +98,25 @@ beepr::beep(sound=1)
 #removing unnecessary tables
 rm(db, population)
 
-##checking data types
-# str(combineddb)
-# str(combineddb)
-# combineddb$Shots = as.numeric(as.character(combineddb$Shots))
-# combineddb$Passes = as.numeric(as.character(combineddb$Passes))
-# combineddb$`Shots on Goal` = as.numeric(as.character(combineddb$`Shots on Goal`))
+#making copy of combineddb to test
+# test = combineddb
 
+#converting ball possession to decimal
+combineddb$`Ball Possession` = as.numeric(sub("%","",combineddb$`Ball Possession`))/100
 
+#converting all factors to numeric
+str(combineddb)
+indx = sapply(combineddb, is.factor)
+combineddb[indx] = lapply(combineddb[indx], function(x) as.numeric(as.character(x)))
+str(combineddb)
 
+#adding columns
+combineddb$win_flag = if_else(combineddb$Goals> combineddb$GoalsAllowed, true = 1, false = 0)
+combineddb$points_earned = if_else(combineddb$Goals>combineddb$GoalsAllowed, true = 3,
+                                   if_else(combineddb$Goals == combineddb$GoalsAllowed, true = 1, false = 0))
+combineddb$goal_conversion_total_shots = combineddb$Goals/combineddb$Shots
+combineddb$goal_conversion_shots_on_goal = combineddb$Goals/combineddb$`Shots on Goal`
+combineddb$unassisted_goals = combineddb$Goals- combineddb$Assists
+combineddb$passes_per_goal = combineddb$Passes/combineddb$Goals
+combineddb$fouls_per_yellow_card = combineddb$`Fouls Committed`/combineddb$`Cautions/Yellow Cards`
+combineddb$fouls_per_red_card = combineddb$`Fouls Committed`/combineddb$`Red Cards`
