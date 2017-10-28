@@ -105,14 +105,13 @@ rm(db, population)
 combineddb$`Ball Possession` = as.numeric(sub("%","",combineddb$`Ball Possession`))/100
 
 #converting all factors to numeric
-str(combineddb)
 indx = sapply(combineddb, is.factor)
 combineddb[indx] = lapply(combineddb[indx], function(x) as.numeric(as.character(x)))
 str(combineddb)
 
 #adding columns
 combineddb$win_flag = if_else(combineddb$Goals> combineddb$GoalsAllowed, true = 1, false = 0)
-combineddb$points_earned = if_else(combineddb$Goals>combineddb$GoalsAllowed, true = 3,
+combineddb$gameweek_points = if_else(combineddb$Goals>combineddb$GoalsAllowed, true = 3,
                                    if_else(combineddb$Goals == combineddb$GoalsAllowed, true = 1, false = 0))
 combineddb$goal_conversion_total_shots = combineddb$Goals/combineddb$Shots
 combineddb$goal_conversion_shots_on_goal = combineddb$Goals/combineddb$`Shots on Goal`
@@ -120,3 +119,14 @@ combineddb$unassisted_goals = combineddb$Goals- combineddb$Assists
 combineddb$passes_per_goal = combineddb$Passes/combineddb$Goals
 combineddb$fouls_per_yellow_card = combineddb$`Fouls Committed`/combineddb$`Cautions/Yellow Cards`
 combineddb$fouls_per_red_card = combineddb$`Fouls Committed`/combineddb$`Red Cards`
+
+#adding gameweek - scraper doesn't necessarily pull in sequential order
+combineddb = combineddb %>% group_by(team) %>%
+  mutate(game_week = rank(date)) %>%
+  arrange(date)
+
+#adding cumulative points
+combineddb = combineddb %>% group_by(team) %>% 
+  mutate(cumu_points = cumsum(gameweek_points))
+
+
