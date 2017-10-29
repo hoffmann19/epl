@@ -132,7 +132,7 @@ combineddb = combineddb %>% group_by(team) %>%
 #get distinct teams and summarise data
 library(dplyr)
 kmeans_df = summarise(group_by(combineddb, team),
-          games = n(),
+          # games = n(),
           average_shots_per_game = mean(Shots),
           average_possession = mean(`Ball Possession`),
           total_shots = sum(Shots),
