@@ -4,6 +4,7 @@ library(data.table)
 library(stringr)
 library(dplyr)
 library(stringi)
+library(DescTools)
 
 
 #date table for every day possible in season
@@ -112,21 +113,70 @@ str(combineddb)
 #adding columns
 combineddb$win_flag = if_else(combineddb$Goals> combineddb$GoalsAllowed, true = 1, false = 0)
 combineddb$gameweek_points = if_else(combineddb$Goals>combineddb$GoalsAllowed, true = 3,
-                                   if_else(combineddb$Goals == combineddb$GoalsAllowed, true = 1, false = 0))
+                                     if_else(combineddb$Goals == combineddb$GoalsAllowed, true = 1, false = 0))
 combineddb$goal_conversion_total_shots = combineddb$Goals/combineddb$Shots
 combineddb$goal_conversion_shots_on_goal = combineddb$Goals/combineddb$`Shots on Goal`
 combineddb$unassisted_goals = combineddb$Goals- combineddb$Assists
 combineddb$passes_per_goal = combineddb$Passes/combineddb$Goals
 combineddb$fouls_per_yellow_card = combineddb$`Fouls Committed`/combineddb$`Cautions/Yellow Cards`
 combineddb$fouls_per_red_card = combineddb$`Fouls Committed`/combineddb$`Red Cards`
+combineddb$goal_difference = combineddb$Goals- combineddb$GoalsAllowed
 
 #adding gameweek - scraper doesn't necessarily pull in sequential order
 combineddb = combineddb %>% group_by(team) %>%
   mutate(game_week = rank(date)) %>%
   arrange(date)
 
+#making team unique ids by gameweek
+combineddb$team_gameweek_id = paste(combineddb$team, combineddb$game_week, sep = "-")
+combineddb$opp_team_gameweek_id = paste(combineddb$Opponent, combineddb$game_week, sep = "-")
+
 #adding cumulative points
 combineddb = combineddb %>% group_by(team) %>% 
   mutate(cumu_points = cumsum(gameweek_points))
+
+#adding cumulative goal difference
+combineddb = combineddb %>% group_by(team) %>% 
+  mutate(cumu_goal_difference = cumsum(goal_difference))
+
+#adding cumulative goal difference
+combineddb = combineddb %>% group_by(team) %>% 
+  mutate(cumu_goals = cumsum(Goals))
+
+#new table with standings by gameweek
+standings = combineddb[,c("team",
+                          "game_week",
+                          "cumu_points",
+                          "cumu_goal_difference",
+                          "cumu_goals")]
+
+#sorting by game week asc, cumu_points desc, cumu_goal_difference
+standings = standings[
+  order( standings$game_week, 
+         -standings$cumu_points, 
+         -standings$cumu_goal_difference,
+         -standings$cumu_goals),
+  ]
+#making uniqueid in standings table
+standings$team_gameweek_id = paste(standings$team, standings$game_week, sep="-")
+
+#row_num for standings table
+standings$rank = row_number(standings$game_week)
+
+#ranking to get actual standing rank for each gameweek
+standings$standing_rank <- ave(standings$rank, standings$game_week, FUN = seq_along)
+
+#grab only standings
+standings = standings[,c("team_gameweek_id",
+                          "standing_rank")]
+
+#adding gameweek standing to combineddb
+combineddb = left_join(combineddb, standings, by= "team_gameweek_id")
+combineddb = rename(combineddb, team_standing_rank = standing_rank)
+combineddb = left_join(combineddb, standings, by = c("opp_team_gameweek_id" = "team_gameweek_id"))
+combineddb = rename(combineddb, opp_standing_rank = standing_rank)
+
+#add difference in standings
+combineddb$standing_difference = as.numeric(combineddb$opp_standing_rank) - as.numeric(combineddb$team_standing_rank)
 
 
