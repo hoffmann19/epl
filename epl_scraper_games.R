@@ -179,4 +179,5 @@ combineddb = rename(combineddb, opp_standing_rank = standing_rank)
 #add difference in standings
 combineddb$standing_difference = as.numeric(combineddb$opp_standing_rank) - as.numeric(combineddb$team_standing_rank)
 
-
+setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
+write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))

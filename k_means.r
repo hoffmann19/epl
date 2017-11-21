@@ -173,3 +173,5 @@ clusters$centers #k centers based off input data
 kmeans_df$cluster = clusters$cluster #adds cluster number to original data
 
 table(kmeans_df$team, kmeans_df$cluster)
+
+
