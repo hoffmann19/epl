@@ -179,5 +179,15 @@ combineddb = rename(combineddb, opp_standing_rank = standing_rank)
 #add difference in standings
 combineddb$standing_difference = as.numeric(combineddb$opp_standing_rank) - as.numeric(combineddb$team_standing_rank)
 
-setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
-write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
+#close game <= 3 places
+combineddb$close_standing_flag =if_else(abs(combineddb$standing_difference) <= 3, 1, 0)
+
+#against top 6
+combineddb$against_top_6_flag = if_else(combineddb$opp_standing_rank <=6, 1,0)
+
+#value of point- need to think on this more...
+combineddb$value_point = combineddb$standing_difference/ combineddb$gameweek_points
+
+# exporting data
+# setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
+# write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
