@@ -182,11 +182,63 @@ combineddb$standing_difference = as.numeric(combineddb$opp_standing_rank) - as.n
 #close game <= 3 places
 combineddb$close_standing_flag =if_else(abs(combineddb$standing_difference) <= 3, 1, 0)
 
-#against top 6
+#against top 6 flag
 combineddb$against_top_6_flag = if_else(combineddb$opp_standing_rank <=6, 1,0)
 
 #value of point- need to think on this more...
 combineddb$value_point = combineddb$standing_difference/ combineddb$gameweek_points
+
+#making lag variables for each gameweek id
+lag_lookup = combineddb[,c("team_gameweek_id",
+                           "team",
+                           "gameweek_points",
+                           "game_week"
+)]
+lag_lookup$team_gameweek_id_lag1 = paste0(lag_lookup$team,"-",lag_lookup$game_week-1)
+lag_lookup$team_gameweek_id_lag2 = paste0(lag_lookup$team,"-",lag_lookup$game_week-2)
+lag_lookup$team_gameweek_id_lag3 = paste0(lag_lookup$team,"-",lag_lookup$game_week-3)
+
+lag_lookup = lag_lookup[,c("team_gameweek_id","team_gameweek_id_lag1","team_gameweek_id_lag2","team_gameweek_id_lag3")]
+
+#unique id and game_week points
+team_and_points = combineddb[,c("team_gameweek_id",
+                                "gameweek_points"
+)]
+
+#finding points for each week, last 3 weeks
+library(dplyr)
+lag_lookup = left_join(lag_lookup, team_and_points, by = c("team_gameweek_id_lag1" = "team_gameweek_id"))
+colnames(lag_lookup)[5]="points_lag1"
+lag_lookup = left_join(lag_lookup, team_and_points, by = c("team_gameweek_id_lag2" = "team_gameweek_id"))
+colnames(lag_lookup)[6]="points_lag2"
+lag_lookup = left_join(lag_lookup, team_and_points, by = c("team_gameweek_id_lag3" = "team_gameweek_id"))
+colnames(lag_lookup)[7]="points_lag3"
+
+#unique id and opponent standing
+team_and_opp_rank = combineddb[,c("team_gameweek_id",
+                                  "standing_difference"
+)]
+
+#finding standing difference for each week, last 3 weeks
+lag_lookup = left_join(lag_lookup, team_and_opp_rank, by = c("team_gameweek_id_lag1" = "team_gameweek_id"))
+colnames(lag_lookup)[8]="standing_difference_lag1"
+lag_lookup = left_join(lag_lookup, team_and_opp_rank, by = c("team_gameweek_id_lag2" = "team_gameweek_id"))
+colnames(lag_lookup)[9]="standing_difference_lag2"
+lag_lookup = left_join(lag_lookup, team_and_opp_rank, by = c("team_gameweek_id_lag3" = "team_gameweek_id"))
+colnames(lag_lookup)[10]="standing_difference_lag3"
+
+#only grabbing columns we want
+lag_lookup = lag_lookup[,c("team_gameweek_id",
+                           "points_lag1",
+                           "points_lag2",
+                           "points_lag3",
+                           "standing_difference_lag1",
+                           "standing_difference_lag2",
+                           "standing_difference_lag3")]
+rm(team_and_opp_rank,team_and_points)
+
+#joining combineddb
+combineddb = left_join(combineddb,lag_lookup, by= c("team_gameweek_id"))
 
 # exporting data
 # setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
