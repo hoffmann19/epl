@@ -217,30 +217,30 @@ colnames(lag_lookup)[7]="points_lag3"
 
 #unique id and opponent standing
 team_and_opp_rank = combineddb[,c("team_gameweek_id",
-                                  "standing_difference"
+                                  "opp_standing_rank"
 )]
 
 #finding standing difference for each week, last 3 weeks
 lag_lookup = left_join(lag_lookup, team_and_opp_rank, by = c("team_gameweek_id_lag1" = "team_gameweek_id"))
-colnames(lag_lookup)[8]="standing_difference_lag1"
+colnames(lag_lookup)[8]="opponent_standing_lag1"
 lag_lookup = left_join(lag_lookup, team_and_opp_rank, by = c("team_gameweek_id_lag2" = "team_gameweek_id"))
-colnames(lag_lookup)[9]="standing_difference_lag2"
+colnames(lag_lookup)[9]="opponent_standing_lag2"
 lag_lookup = left_join(lag_lookup, team_and_opp_rank, by = c("team_gameweek_id_lag3" = "team_gameweek_id"))
-colnames(lag_lookup)[10]="standing_difference_lag3"
+colnames(lag_lookup)[10]="opponent_standing_lag3"
 
 #only grabbing columns we want
 lag_lookup = lag_lookup[,c("team_gameweek_id",
                            "points_lag1",
                            "points_lag2",
                            "points_lag3",
-                           "standing_difference_lag1",
-                           "standing_difference_lag2",
-                           "standing_difference_lag3")]
+                           "opponent_standing_lag1",
+                           "opponent_standing_lag2",
+                           "opponent_standing_lag3")]
 rm(team_and_opp_rank,team_and_points)
 
 #joining combineddb
 combineddb = left_join(combineddb,lag_lookup, by= c("team_gameweek_id"))
 
-# exporting data
+# # exporting data
 # setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
 # write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
