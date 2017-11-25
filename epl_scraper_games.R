@@ -7,6 +7,78 @@ library(dplyr)
 library(stringi)
 library(DescTools)
 
+listofgamedates = c('20170811',
+'20170812',
+'20170813',
+'20170819',
+'20170820',
+'20170821',
+'20170826',
+'20170827',
+'20170909',
+'20170910',
+'20170911',
+'20170915',
+'20170916',
+'20170917',
+'20170923',
+'20170924',
+'20170925',
+'20170930',
+'20171001',
+'20171014',
+'20171015',
+'20171016',
+'20171020',
+'20171021',
+'20171022',
+'20171023',
+'20171028',
+'20171029',
+'20171030',
+'20171104',
+'20171105',
+'20171118',
+'20171119',
+'20171120',
+'20171124',
+'20171125',
+'20171126',
+'20171128',
+'20171129',
+'20171202',
+'20171203',
+'20171209',
+'20171210',
+'20171212',
+'20171213',
+'20171216',
+'20171217',
+'20171218',
+'20171222',
+'20171223',
+'20171226',
+'20171227',
+'20171228',
+'20171230',
+'20171231',
+'20180101',
+'20180102',
+'20180103',
+'20180113',
+'20180114',
+'20180115',
+'20180120',
+'20180121',
+'20180122',
+'20180130',
+'20180131',
+'20180203',
+'20180210',
+'20180224',
+'20180303',
+'20180310',
+'20180317')
 
 #date table for every day possible in season
 itemizeDates <- function(startDate="08-11-17", endDate=Sys.Date(),
@@ -19,7 +91,9 @@ dates = as.data.table(
   itemizeDates(startDate="08-11-17", endDate=Sys.Date())
 )
 dates$V1=format(strptime(dates$V1,"%m-%d-%y"),"%Y%m%d")
-
+listofgamedates = as.data.table(listofgamedates)
+dates = inner_join(listofgamedates,dates, by=c('listofgamedates' = 'V1'))
+colnames(dates)[1]='V1'
 ##every epl team code on nbc 
 team_numbers = data.frame(team_number=c("21","1153","1150",'1133','25','90','28','1140','31',
                                         '32','33','34','36','37','1139','1141','39','97',
@@ -42,7 +116,7 @@ game_vector <- gamecodefinal[['gamecode']]
 
 
 ##removing unnecessary tables
-rm(gamecode, team_numbers, dates, gamecodefinal, gamecodefinaltwo, gamecodetwo)
+rm(gamecode, team_numbers, dates, gamecodefinal, gamecodefinaltwo, gamecodetwo, listofgamedates)
 
 
 #finding valid URLs
