@@ -1,4 +1,3 @@
-#adding this to see if Git is working right
 #install.packages("rvest")
 library("rvest")
 library(data.table)
@@ -6,7 +5,6 @@ library(stringr)
 library(dplyr)
 library(stringi)
 library(DescTools)
-
 listofgamedates = c('20170811',
 '20170812',
 '20170813',
@@ -262,6 +260,9 @@ combineddb$against_top_6_flag = if_else(combineddb$opp_standing_rank <=6, 1,0)
 
 #value of point- need to think on this more...
 combineddb$value_point = combineddb$standing_difference/ combineddb$gameweek_points
+# creating an averages tables
+averages = aggregate(. ~ team, combineddb[,1:16], mean)
+totals = aggregate(. ~ team, combineddb[,1:16], sum)
 
 #making lag variables for each gameweek id
 lag_lookup = combineddb[,c("team_gameweek_id",
