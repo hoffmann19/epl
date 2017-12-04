@@ -5,7 +5,6 @@ library(stringr)
 library(dplyr)
 library(stringi)
 library(DescTools)
-library(plotly)
 listofgamedates = c('20170811',
 '20170812',
 '20170813',
