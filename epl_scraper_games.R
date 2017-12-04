@@ -262,6 +262,7 @@ combineddb$against_top_6_flag = if_else(combineddb$opp_standing_rank <=6, 1,0)
 combineddb$value_point = combineddb$standing_difference/ combineddb$gameweek_points
 # creating an averages tables
 averages = aggregate(. ~ team, combineddb[,1:16], mean)
+totals = aggregate(. ~ team, combineddb[,1:16], sum)
 
 # exporting data
 # setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
