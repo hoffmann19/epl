@@ -6,10 +6,10 @@ library(ggplot2)
 columnlist = sort(unlist(as.list(colnames(averages[,c(2:length(colnames(averages)))]))))
 
 ui <- fluidPage(
- selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
- selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
- dataTableOutput('mytable'),
- plotOutput('scatter')
+  selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
+  selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
+  dataTableOutput('mytable'),
+  plotOutput('scatter')
 )
 
 server = function(input, output) {
