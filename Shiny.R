@@ -1,4 +1,3 @@
-#this is code to test
 library(shiny)
 # install.packages('DT')
 library(DT)
@@ -19,7 +18,7 @@ server = function(input, output) {
   })
   p = reactive({ggplot(dataset(),aes_string(x=input$x, y=input$y,color = input$y))+
       # geom_point(size=5, shape = 16) +
-      geom_text(aes(label = team, size = points)) +
+      geom_text(aes(label = team)) +
       scale_color_gradient(low = "#0091ff", high = "#f0650e")})
   output$scatter = renderPlot(p())
 }
