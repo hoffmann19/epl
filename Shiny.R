@@ -1,7 +1,7 @@
-#library(shiny)
+library(shiny)
 # install.packages('DT')
-#library(DT)
-#library(ggplot2)
+library(DT)
+library(ggplot2)
 #teamchoices = sort(unlist(as.list(unique(combineddb$team))))
 columnlist = sort(unlist(as.list(colnames(averages[,c(2:length(colnames(averages)))]))))
 
