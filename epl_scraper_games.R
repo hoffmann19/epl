@@ -262,7 +262,9 @@ combineddb$against_top_6_flag = if_else(combineddb$opp_standing_rank <=6, 1,0)
 combineddb$value_point = combineddb$standing_difference/ combineddb$gameweek_points
 # creating an averages tables
 averages = aggregate(. ~ team, combineddb[,1:16], mean)
+totalpoints = aggregate(.~ team,combineddb[,c('team','gameweek_points')],sum)
 totals = aggregate(. ~ team, combineddb[,1:16], sum)
+totals$points = totalpoints$gameweek_points
 
 #making lag variables for each gameweek id
 lag_lookup = combineddb[,c("team_gameweek_id",
