@@ -316,6 +316,6 @@ rm(team_and_opp_rank,team_and_points)
 #joining combineddb
 combineddb = left_join(combineddb,lag_lookup, by= c("team_gameweek_id"))
 
-# # exporting data
-# setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
-# write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
+# exporting data
+setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
+write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
