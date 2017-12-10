@@ -3,6 +3,7 @@ library(shiny)
 library(DT)
 library(ggplot2)
 #teamchoices = sort(unlist(as.list(unique(combineddb$team))))
+colnames(totals) = make.names(colnames(totals))
 columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]))))
 
 ui <- fluidPage(
