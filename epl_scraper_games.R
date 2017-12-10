@@ -266,6 +266,7 @@ totalpoints = aggregate(.~ team,combineddb[,c('team','gameweek_points')],sum)
 totals = aggregate(. ~ team, combineddb[,1:16], sum)
 totals$points = totalpoints$gameweek_points
 
+
 #making lag variables for each gameweek id
 lag_lookup = combineddb[,c("team_gameweek_id",
                            "team",
