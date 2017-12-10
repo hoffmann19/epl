@@ -266,6 +266,8 @@ totalpoints = aggregate(.~ team,combineddb[,c('team','gameweek_points')],sum)
 totals = aggregate(. ~ team, combineddb[,1:16], sum)
 totals$points = totalpoints$gameweek_points
 
+
+#why the fuck isn't this working
 # exporting data
 # setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
 # write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
