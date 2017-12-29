@@ -9,7 +9,7 @@ columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]
 ui <- fluidPage(
   selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
   selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
-  numericInput('clusters', 'Cluster count', 3, min = 1, max = 9),
+  numericInput('clusters', 'Cluster count', 4, min = 1, max = 9),
   dataTableOutput('mytable'),
   plotOutput('scatter')
   
