@@ -1,6 +1,6 @@
 library(rvest)
 library(tidyverse)
-
+#did this work
 #finding all gamecodes.
 list_of_month <- read_html('http://scores.nbcsports.com/epl/fixtures.asp')
 list_of_month <- as.integer(list_of_month %>% html_node('select') %>% html_nodes('option') %>% html_attr("value"))
