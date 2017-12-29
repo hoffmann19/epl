@@ -263,8 +263,14 @@ combineddb$value_point = combineddb$standing_difference/ combineddb$gameweek_poi
 # creating an averages tables
 averages = aggregate(. ~ team, combineddb[,1:16], mean)
 totalpoints = aggregate(.~ team,combineddb[,c('team','gameweek_points')],sum)
+totalgoalsallowed = aggregate(.~ team,combineddb[,c('team','GoalsAllowed')],sum)
 totals = aggregate(. ~ team, combineddb[,1:16], sum)
 totals$points = totalpoints$gameweek_points
+totals$Goals.Allowed = totalgoalsallowed$GoalsAllowed
+totals = inner_join(totals,teamlookup,by = c('team' = 'Abbreviation' ))
+totals = totals[c(1,19,2:18)]
+remove(totalgoalsallowed)
+remove(totalpoints)
 
 
 #making lag variables for each gameweek id
@@ -316,6 +322,9 @@ lag_lookup = lag_lookup[,c("team_gameweek_id",
                            "opponent_standing_lag3")]
 rm(team_and_opp_rank,team_and_points)
 
+
+#adding full team name
+combineddb = inner_join(combineddb,teamlookup,by = c('team' = 'Abbreviation' ))
 #joining combineddb
 combineddb = left_join(combineddb,lag_lookup, by= c("team_gameweek_id"))
 
