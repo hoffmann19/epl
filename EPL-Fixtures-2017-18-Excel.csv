@@ -1,0 +1,381 @@
+DIVISION,DATE,TIME,FIXTURE,HOME TEAM,AWAY TEAM
+EPL,8/12/17,15:00,Arsenal V Leicester City ,Arsenal,Leicester City
+EPL,8/12/17,15:00,Brighton & Hove Albion V Manchester City ,Brighton & Hove Albion,Manchester City
+EPL,8/12/17,15:00,Chelsea V Burnley ,Chelsea,Burnley
+EPL,8/12/17,15:00,Crystal Palace V Huddersfield Town ,Crystal Palace,Huddersfield Town
+EPL,8/12/17,15:00,Everton V Stoke City ,Everton,Stoke City
+EPL,8/12/17,15:00,Manchester United V West Ham United ,Manchester United,West Ham United
+EPL,8/12/17,15:00,Newcastle United V Tottenham Hotspur ,Newcastle United,Tottenham Hotspur
+EPL,8/12/17,15:00,Southampton V Swansea City ,Southampton,Swansea City
+EPL,8/12/17,15:00,Watford V Liverpool ,Watford,Liverpool
+EPL,8/12/17,15:00,West Bromwich Albion V Bournemouth ,West Bromwich Albion,Bournemouth
+EPL,8/19/17,15:00,Bournemouth V Watford ,Bournemouth,Watford
+EPL,8/19/17,15:00,Burnley V West Bromwich Albion ,Burnley,West Bromwich Albion
+EPL,8/19/17,15:00,Huddersfield Town V Newcastle United ,Huddersfield Town,Newcastle United
+EPL,8/19/17,15:00,Leicester City V Brighton & Hove Albion ,Leicester City,Brighton & Hove Albion
+EPL,8/19/17,15:00,Liverpool V Crystal Palace ,Liverpool,Crystal Palace
+EPL,8/19/17,15:00,Manchester City V Everton ,Manchester City,Everton
+EPL,8/19/17,15:00,Southampton V West Ham United ,Southampton,West Ham United
+EPL,8/19/17,15:00,Stoke City V Arsenal ,Stoke City,Arsenal
+EPL,8/19/17,15:00,Swansea City V Manchester United ,Swansea City,Manchester United
+EPL,8/19/17,15:00,Tottenham Hotspur V Chelsea ,Tottenham Hotspur,Chelsea
+EPL,8/26/17,15:00,Bournemouth V Manchester City ,Bournemouth,Manchester City
+EPL,8/26/17,15:00,Chelsea V Everton ,Chelsea,Everton
+EPL,8/26/17,15:00,Crystal Palace V Swansea City ,Crystal Palace,Swansea City
+EPL,8/26/17,15:00,Huddersfield Town V Southampton ,Huddersfield Town,Southampton
+EPL,8/26/17,15:00,Liverpool V Arsenal ,Liverpool,Arsenal
+EPL,8/26/17,15:00,Manchester United V Leicester City ,Manchester United,Leicester City
+EPL,8/26/17,15:00,Newcastle United V West Ham United ,Newcastle United,West Ham United
+EPL,8/26/17,15:00,Tottenham Hotspur V Burnley ,Tottenham Hotspur,Burnley
+EPL,8/26/17,15:00,Watford V Brighton & Hove Albion ,Watford,Brighton & Hove Albion
+EPL,8/26/17,15:00,West Bromwich Albion V Stoke City ,West Bromwich Albion,Stoke City
+EPL,9/9/17,15:00,Arsenal V Bournemouth ,Arsenal,Bournemouth
+EPL,9/9/17,15:00,Brighton & Hove Albion V West Bromwich Albion ,Brighton & Hove Albion,West Bromwich Albion
+EPL,9/9/17,15:00,Burnley V Crystal Palace ,Burnley,Crystal Palace
+EPL,9/9/17,15:00,Everton V Tottenham Hotspur ,Everton,Tottenham Hotspur
+EPL,9/9/17,15:00,Leicester City V Chelsea ,Leicester City,Chelsea
+EPL,9/9/17,15:00,Manchester City V Liverpool ,Manchester City,Liverpool
+EPL,9/9/17,15:00,Southampton V Watford ,Southampton,Watford
+EPL,9/9/17,15:00,Stoke City V Manchester United ,Stoke City,Manchester United
+EPL,9/9/17,15:00,Swansea City V Newcastle United ,Swansea City,Newcastle United
+EPL,9/9/17,15:00,West Ham United V Huddersfield Town ,West Ham United,Huddersfield Town
+EPL,9/16/17,15:00,Bournemouth V Brighton & Hove Albion ,Bournemouth,Brighton & Hove Albion
+EPL,9/16/17,15:00,Chelsea V Arsenal ,Chelsea,Arsenal
+EPL,9/16/17,15:00,Crystal Palace V Southampton ,Crystal Palace,Southampton
+EPL,9/16/17,15:00,Huddersfield Town V Leicester City ,Huddersfield Town,Leicester City
+EPL,9/16/17,15:00,Liverpool V Burnley ,Liverpool,Burnley
+EPL,9/16/17,15:00,Manchester United V Everton ,Manchester United,Everton
+EPL,9/16/17,15:00,Newcastle United V Stoke City ,Newcastle United,Stoke City
+EPL,9/16/17,15:00,Tottenham Hotspur V Swansea City ,Tottenham Hotspur,Swansea City
+EPL,9/16/17,15:00,Watford V Manchester City ,Watford,Manchester City
+EPL,9/16/17,15:00,West Bromwich Albion V West Ham United ,West Bromwich Albion,West Ham United
+EPL,9/23/17,15:00,Arsenal V West Bromwich Albion ,Arsenal,West Bromwich Albion
+EPL,9/23/17,15:00,Brighton & Hove Albion V Newcastle United ,Brighton & Hove Albion,Newcastle United
+EPL,9/23/17,15:00,Burnley V Huddersfield Town ,Burnley,Huddersfield Town
+EPL,9/23/17,15:00,Everton V Bournemouth ,Everton,Bournemouth
+EPL,9/23/17,15:00,Leicester City V Liverpool ,Leicester City,Liverpool
+EPL,9/23/17,15:00,Manchester City V Crystal Palace ,Manchester City,Crystal Palace
+EPL,9/23/17,15:00,Southampton V Manchester United ,Southampton,Manchester United
+EPL,9/23/17,15:00,Stoke City V Chelsea ,Stoke City,Chelsea
+EPL,9/23/17,15:00,Swansea City V Watford ,Swansea City,Watford
+EPL,9/23/17,15:00,West Ham United V Tottenham Hotspur ,West Ham United,Tottenham Hotspur
+EPL,9/30/17,15:00,Arsenal V Brighton & Hove Albion ,Arsenal,Brighton & Hove Albion
+EPL,9/30/17,15:00,Bournemouth V Leicester City ,Bournemouth,Leicester City
+EPL,9/30/17,15:00,Chelsea V Manchester City ,Chelsea,Manchester City
+EPL,9/30/17,15:00,Everton V Burnley ,Everton,Burnley
+EPL,9/30/17,15:00,Huddersfield Town V Tottenham Hotspur ,Huddersfield Town,Tottenham Hotspur
+EPL,9/30/17,15:00,Manchester United V Crystal Palace ,Manchester United,Crystal Palace
+EPL,9/30/17,15:00,Newcastle United V Liverpool ,Newcastle United,Liverpool
+EPL,9/30/17,15:00,Stoke City V Southampton ,Stoke City,Southampton
+EPL,9/30/17,15:00,West Bromwich Albion V Watford ,West Bromwich Albion,Watford
+EPL,9/30/17,15:00,West Ham United V Swansea City ,West Ham United,Swansea City
+EPL,10/14/17,15:00,Brighton & Hove Albion V Everton ,Brighton & Hove Albion,Everton
+EPL,10/14/17,15:00,Burnley V West Ham United ,Burnley,West Ham United
+EPL,10/14/17,15:00,Crystal Palace V Chelsea ,Crystal Palace,Chelsea
+EPL,10/14/17,15:00,Leicester City V West Bromwich Albion ,Leicester City,West Bromwich Albion
+EPL,10/14/17,15:00,Liverpool V Manchester United ,Liverpool,Manchester United
+EPL,10/14/17,15:00,Manchester City V Stoke City ,Manchester City,Stoke City
+EPL,10/14/17,15:00,Southampton V Newcastle United ,Southampton,Newcastle United
+EPL,10/14/17,15:00,Swansea City V Huddersfield Town ,Swansea City,Huddersfield Town
+EPL,10/14/17,15:00,Tottenham Hotspur V Bournemouth ,Tottenham Hotspur,Bournemouth
+EPL,10/14/17,15:00,Watford V Arsenal ,Watford,Arsenal
+EPL,10/21/17,15:00,Chelsea V Watford ,Chelsea,Watford
+EPL,10/21/17,15:00,Everton V Arsenal ,Everton,Arsenal
+EPL,10/21/17,15:00,Huddersfield Town V Manchester United ,Huddersfield Town,Manchester United
+EPL,10/21/17,15:00,Manchester City V Burnley ,Manchester City,Burnley
+EPL,10/21/17,15:00,Newcastle United V Crystal Palace ,Newcastle United,Crystal Palace
+EPL,10/21/17,15:00,Southampton V West Bromwich Albion ,Southampton,West Bromwich Albion
+EPL,10/21/17,15:00,Stoke City V Bournemouth ,Stoke City,Bournemouth
+EPL,10/21/17,15:00,Swansea City V Leicester City ,Swansea City,Leicester City
+EPL,10/21/17,15:00,Tottenham Hotspur V Liverpool ,Tottenham Hotspur,Liverpool
+EPL,10/21/17,15:00,West Ham United V Brighton & Hove Albion ,West Ham United,Brighton & Hove Albion
+EPL,10/28/17,15:00,Arsenal V Swansea City ,Arsenal,Swansea City
+EPL,10/28/17,15:00,Bournemouth V Chelsea ,Bournemouth,Chelsea
+EPL,10/28/17,15:00,Brighton & Hove Albion V Southampton ,Brighton & Hove Albion,Southampton
+EPL,10/28/17,15:00,Burnley V Newcastle United ,Burnley,Newcastle United
+EPL,10/28/17,15:00,Crystal Palace V West Ham United ,Crystal Palace,West Ham United
+EPL,10/28/17,15:00,Leicester City V Everton ,Leicester City,Everton
+EPL,10/28/17,15:00,Liverpool V Huddersfield Town ,Liverpool,Huddersfield Town
+EPL,10/28/17,15:00,Manchester United V Tottenham Hotspur ,Manchester United,Tottenham Hotspur
+EPL,10/28/17,15:00,Watford V Stoke City ,Watford,Stoke City
+EPL,10/28/17,15:00,West Bromwich Albion V Manchester City ,West Bromwich Albion,Manchester City
+EPL,11/4/17,15:00,Chelsea V Manchester United ,Chelsea,Manchester United
+EPL,11/4/17,15:00,Everton V Watford ,Everton,Watford
+EPL,11/4/17,15:00,Huddersfield Town V West Bromwich Albion ,Huddersfield Town,West Bromwich Albion
+EPL,11/4/17,15:00,Manchester City V Arsenal ,Manchester City,Arsenal
+EPL,11/4/17,15:00,Newcastle United V Bournemouth ,Newcastle United,Bournemouth
+EPL,11/4/17,15:00,Southampton V Burnley ,Southampton,Burnley
+EPL,11/4/17,15:00,Stoke City V Leicester City ,Stoke City,Leicester City
+EPL,11/4/17,15:00,Swansea City V Brighton & Hove Albion ,Swansea City,Brighton & Hove Albion
+EPL,11/4/17,15:00,Tottenham Hotspur V Crystal Palace ,Tottenham Hotspur,Crystal Palace
+EPL,11/4/17,15:00,West Ham United V Liverpool ,West Ham United,Liverpool
+EPL,11/18/17,15:00,Arsenal V Tottenham Hotspur ,Arsenal,Tottenham Hotspur
+EPL,11/18/17,15:00,Bournemouth V Huddersfield Town ,Bournemouth,Huddersfield Town
+EPL,11/18/17,15:00,Brighton & Hove Albion V Stoke City ,Brighton & Hove Albion,Stoke City
+EPL,11/18/17,15:00,Burnley V Swansea City ,Burnley,Swansea City
+EPL,11/18/17,15:00,Crystal Palace V Everton ,Crystal Palace,Everton
+EPL,11/18/17,15:00,Leicester City V Manchester City ,Leicester City,Manchester City
+EPL,11/18/17,15:00,Liverpool V Southampton ,Liverpool,Southampton
+EPL,11/18/17,15:00,Manchester United V Newcastle United ,Manchester United,Newcastle United
+EPL,11/18/17,15:00,Watford V West Ham United ,Watford,West Ham United
+EPL,11/18/17,15:00,West Bromwich Albion V Chelsea ,West Bromwich Albion,Chelsea
+EPL,11/25/17,15:00,Burnley V Arsenal ,Burnley,Arsenal
+EPL,11/25/17,15:00,Crystal Palace V Stoke City ,Crystal Palace,Stoke City
+EPL,11/25/17,15:00,Huddersfield Town V Manchester City ,Huddersfield Town,Manchester City
+EPL,11/25/17,15:00,Liverpool V Chelsea ,Liverpool,Chelsea
+EPL,11/25/17,15:00,Manchester United V Brighton & Hove Albion ,Manchester United,Brighton & Hove Albion
+EPL,11/25/17,15:00,Newcastle United V Watford ,Newcastle United,Watford
+EPL,11/25/17,15:00,Southampton V Everton ,Southampton,Everton
+EPL,11/25/17,15:00,Swansea City V Bournemouth ,Swansea City,Bournemouth
+EPL,11/25/17,15:00,Tottenham Hotspur V West Bromwich Albion ,Tottenham Hotspur,West Bromwich Albion
+EPL,11/25/17,15:00,West Ham United V Leicester City ,West Ham United,Leicester City
+EPL,11/28/17,19:45,Arsenal V Huddersfield Town ,Arsenal,Huddersfield Town
+EPL,11/28/17,19:45,Bournemouth V Burnley ,Bournemouth,Burnley
+EPL,11/28/17,19:45,Brighton & Hove Albion V Crystal Palace ,Brighton & Hove Albion,Crystal Palace
+EPL,11/28/17,19:45,Leicester City V Tottenham Hotspur ,Leicester City,Tottenham Hotspur
+EPL,11/28/17,19:45,Watford V Manchester United ,Watford,Manchester United
+EPL,11/28/17,20:00,West Bromwich Albion V Newcastle United ,West Bromwich Albion,Newcastle United
+EPL,11/29/17,19:45,Chelsea V Swansea City ,Chelsea,Swansea City
+EPL,11/29/17,19:45,Everton V West Ham United ,Everton,West Ham United
+EPL,11/29/17,20:00,Manchester City V Southampton ,Manchester City,Southampton
+EPL,11/29/17,20:00,Stoke City V Liverpool ,Stoke City,Liverpool
+EPL,12/2/17,15:00,Arsenal V Manchester United ,Arsenal,Manchester United
+EPL,12/2/17,15:00,Bournemouth V Southampton ,Bournemouth,Southampton
+EPL,12/2/17,15:00,Brighton & Hove Albion V Liverpool ,Brighton & Hove Albion,Liverpool
+EPL,12/2/17,15:00,Chelsea V Newcastle United ,Chelsea,Newcastle United
+EPL,12/2/17,15:00,Everton V Huddersfield Town ,Everton,Huddersfield Town
+EPL,12/2/17,15:00,Leicester City V Burnley ,Leicester City,Burnley
+EPL,12/2/17,15:00,Manchester City V West Ham United ,Manchester City,West Ham United
+EPL,12/2/17,15:00,Stoke City V Swansea City ,Stoke City,Swansea City
+EPL,12/2/17,15:00,Watford V Tottenham Hotspur ,Watford,Tottenham Hotspur
+EPL,12/2/17,15:00,West Bromwich Albion V Crystal Palace ,West Bromwich Albion,Crystal Palace
+EPL,12/9/17,15:00,Burnley V Watford ,Burnley,Watford
+EPL,12/9/17,15:00,Crystal Palace V Bournemouth ,Crystal Palace,Bournemouth
+EPL,12/9/17,15:00,Huddersfield Town V Brighton & Hove Albion ,Huddersfield Town,Brighton & Hove Albion
+EPL,12/9/17,15:00,Liverpool V Everton ,Liverpool,Everton
+EPL,12/9/17,15:00,Manchester United V Manchester City ,Manchester United,Manchester City
+EPL,12/9/17,15:00,Newcastle United V Leicester City ,Newcastle United,Leicester City
+EPL,12/9/17,15:00,Southampton V Arsenal ,Southampton,Arsenal
+EPL,12/9/17,15:00,Swansea City V West Bromwich Albion ,Swansea City,West Bromwich Albion
+EPL,12/9/17,15:00,Tottenham Hotspur V Stoke City ,Tottenham Hotspur,Stoke City
+EPL,12/9/17,15:00,West Ham United V Chelsea ,West Ham United,Chelsea
+EPL,12/12/17,19:45,Burnley V Stoke City ,Burnley,Stoke City
+EPL,12/12/17,19:45,Huddersfield Town V Chelsea ,Huddersfield Town,Chelsea
+EPL,12/12/17,19:45,Swansea City V Manchester City ,Swansea City,Manchester City
+EPL,12/12/17,19:45,West Ham United V Arsenal ,West Ham United,Arsenal
+EPL,12/12/17,20:00,Crystal Palace V Watford ,Crystal Palace,Watford
+EPL,12/12/17,20:00,Manchester United V Bournemouth ,Manchester United,Bournemouth
+EPL,12/13/17,19:45,Newcastle United V Everton ,Newcastle United,Everton
+EPL,12/13/17,19:45,Southampton V Leicester City ,Southampton,Leicester City
+EPL,12/13/17,20:00,Liverpool V West Bromwich Albion ,Liverpool,West Bromwich Albion
+EPL,12/13/17,20:00,Tottenham Hotspur V Brighton & Hove Albion ,Tottenham Hotspur,Brighton & Hove Albion
+EPL,12/16/17,15:00,Arsenal V Newcastle United ,Arsenal,Newcastle United
+EPL,12/16/17,15:00,Bournemouth V Liverpool ,Bournemouth,Liverpool
+EPL,12/16/17,15:00,Brighton & Hove Albion V Burnley ,Brighton & Hove Albion,Burnley
+EPL,12/16/17,15:00,Chelsea V Southampton ,Chelsea,Southampton
+EPL,12/16/17,15:00,Everton V Swansea City ,Everton,Swansea City
+EPL,12/16/17,15:00,Leicester City V Crystal Palace ,Leicester City,Crystal Palace
+EPL,12/16/17,15:00,Manchester City V Tottenham Hotspur ,Manchester City,Tottenham Hotspur
+EPL,12/16/17,15:00,Stoke City V West Ham United ,Stoke City,West Ham United
+EPL,12/16/17,15:00,Watford V Huddersfield Town ,Watford,Huddersfield Town
+EPL,12/16/17,15:00,West Bromwich Albion V Manchester United ,West Bromwich Albion,Manchester United
+EPL,12/23/17,15:00,Arsenal V Liverpool ,Arsenal,Liverpool
+EPL,12/23/17,15:00,Brighton & Hove Albion V Watford ,Brighton & Hove Albion,Watford
+EPL,12/23/17,15:00,Burnley V Tottenham Hotspur ,Burnley,Tottenham Hotspur
+EPL,12/23/17,15:00,Everton V Chelsea ,Everton,Chelsea
+EPL,12/23/17,15:00,Leicester City V Manchester United ,Leicester City,Manchester United
+EPL,12/23/17,15:00,Manchester City V Bournemouth ,Manchester City,Bournemouth
+EPL,12/23/17,15:00,Southampton V Huddersfield Town ,Southampton,Huddersfield Town
+EPL,12/23/17,15:00,Stoke City V West Bromwich Albion ,Stoke City,West Bromwich Albion
+EPL,12/23/17,15:00,Swansea City V Crystal Palace ,Swansea City,Crystal Palace
+EPL,12/23/17,15:00,West Ham United V Newcastle United ,West Ham United,Newcastle United
+EPL,12/26/17,15:00,Bournemouth V West Ham United ,Bournemouth,West Ham United
+EPL,12/26/17,15:00,Chelsea V Brighton & Hove Albion ,Chelsea,Brighton & Hove Albion
+EPL,12/26/17,15:00,Crystal Palace V Arsenal ,Crystal Palace,Arsenal
+EPL,12/26/17,15:00,Huddersfield Town V Stoke City ,Huddersfield Town,Stoke City
+EPL,12/26/17,15:00,Liverpool V Swansea City ,Liverpool,Swansea City
+EPL,12/26/17,15:00,Manchester United V Burnley ,Manchester United,Burnley
+EPL,12/26/17,15:00,Newcastle United V Manchester City ,Newcastle United,Manchester City
+EPL,12/26/17,15:00,Tottenham Hotspur V Southampton ,Tottenham Hotspur,Southampton
+EPL,12/26/17,15:00,Watford V Leicester City ,Watford,Leicester City
+EPL,12/26/17,15:00,West Bromwich Albion V Everton ,West Bromwich Albion,Everton
+EPL,12/30/17,15:00,Bournemouth V Everton ,Bournemouth,Everton
+EPL,12/30/17,15:00,Chelsea V Stoke City ,Chelsea,Stoke City
+EPL,12/30/17,15:00,Crystal Palace V Manchester City ,Crystal Palace,Manchester City
+EPL,12/30/17,15:00,Huddersfield Town V Burnley ,Huddersfield Town,Burnley
+EPL,12/30/17,15:00,Liverpool V Leicester City ,Liverpool,Leicester City
+EPL,12/30/17,15:00,Manchester United V Southampton ,Manchester United,Southampton
+EPL,12/30/17,15:00,Newcastle United V Brighton & Hove Albion ,Newcastle United,Brighton & Hove Albion
+EPL,12/30/17,15:00,Tottenham Hotspur V West Ham United ,Tottenham Hotspur,West Ham United
+EPL,12/30/17,15:00,Watford V Swansea City ,Watford,Swansea City
+EPL,12/30/17,15:00,West Bromwich Albion V Arsenal ,West Bromwich Albion,Arsenal
+EPL,1/1/18,15:00,Arsenal V Chelsea ,Arsenal,Chelsea
+EPL,1/1/18,15:00,Brighton & Hove Albion V Bournemouth ,Brighton & Hove Albion,Bournemouth
+EPL,1/1/18,15:00,Burnley V Liverpool ,Burnley,Liverpool
+EPL,1/1/18,15:00,Everton V Manchester United ,Everton,Manchester United
+EPL,1/1/18,15:00,Leicester City V Huddersfield Town ,Leicester City,Huddersfield Town
+EPL,1/1/18,15:00,Manchester City V Watford ,Manchester City,Watford
+EPL,1/1/18,15:00,Southampton V Crystal Palace ,Southampton,Crystal Palace
+EPL,1/1/18,15:00,Stoke City V Newcastle United ,Stoke City,Newcastle United
+EPL,1/1/18,15:00,Swansea City V Tottenham Hotspur ,Swansea City,Tottenham Hotspur
+EPL,1/1/18,15:00,West Ham United V West Bromwich Albion ,West Ham United,West Bromwich Albion
+EPL,1/13/18,15:00,Bournemouth V Arsenal ,Bournemouth,Arsenal
+EPL,1/13/18,15:00,Chelsea V Leicester City ,Chelsea,Leicester City
+EPL,1/13/18,15:00,Crystal Palace V Burnley ,Crystal Palace,Burnley
+EPL,1/13/18,15:00,Huddersfield Town V West Ham United ,Huddersfield Town,West Ham United
+EPL,1/13/18,15:00,Liverpool V Manchester City ,Liverpool,Manchester City
+EPL,1/13/18,15:00,Manchester United V Stoke City ,Manchester United,Stoke City
+EPL,1/13/18,15:00,Newcastle United V Swansea City ,Newcastle United,Swansea City
+EPL,1/13/18,15:00,Tottenham Hotspur V Everton ,Tottenham Hotspur,Everton
+EPL,1/13/18,15:00,Watford V Southampton ,Watford,Southampton
+EPL,1/13/18,15:00,West Bromwich Albion V Brighton & Hove Albion ,West Bromwich Albion,Brighton & Hove Albion
+EPL,1/20/18,15:00,Arsenal V Crystal Palace ,Arsenal,Crystal Palace
+EPL,1/20/18,15:00,Brighton & Hove Albion V Chelsea ,Brighton & Hove Albion,Chelsea
+EPL,1/20/18,15:00,Burnley V Manchester United ,Burnley,Manchester United
+EPL,1/20/18,15:00,Everton V West Bromwich Albion ,Everton,West Bromwich Albion
+EPL,1/20/18,15:00,Leicester City V Watford ,Leicester City,Watford
+EPL,1/20/18,15:00,Manchester City V Newcastle United ,Manchester City,Newcastle United
+EPL,1/20/18,15:00,Southampton V Tottenham Hotspur ,Southampton,Tottenham Hotspur
+EPL,1/20/18,15:00,Stoke City V Huddersfield Town ,Stoke City,Huddersfield Town
+EPL,1/20/18,15:00,Swansea City V Liverpool ,Swansea City,Liverpool
+EPL,1/20/18,15:00,West Ham United V Bournemouth ,West Ham United,Bournemouth
+EPL,1/30/18,19:45,Huddersfield Town V Liverpool ,Huddersfield Town,Liverpool
+EPL,1/30/18,19:45,Swansea City V Arsenal ,Swansea City,Arsenal
+EPL,1/30/18,19:45,West Ham United V Crystal Palace ,West Ham United,Crystal Palace
+EPL,1/31/18,19:45,Chelsea V Bournemouth ,Chelsea,Bournemouth
+EPL,1/31/18,19:45,Everton V Leicester City ,Everton,Leicester City
+EPL,1/31/18,19:45,Newcastle United V Burnley ,Newcastle United,Burnley
+EPL,1/31/18,19:45,Southampton V Brighton & Hove Albion ,Southampton,Brighton & Hove Albion
+EPL,1/31/18,20:00,Manchester City V West Bromwich Albion ,Manchester City,West Bromwich Albion
+EPL,1/31/18,20:00,Stoke City V Watford ,Stoke City,Watford
+EPL,1/31/18,20:00,Tottenham Hotspur V Manchester United ,Tottenham Hotspur,Manchester United
+EPL,2/3/18,15:00,Arsenal V Everton ,Arsenal,Everton
+EPL,2/3/18,15:00,Bournemouth V Stoke City ,Bournemouth,Stoke City
+EPL,2/3/18,15:00,Brighton & Hove Albion V West Ham United ,Brighton & Hove Albion,West Ham United
+EPL,2/3/18,15:00,Burnley V Manchester City ,Burnley,Manchester City
+EPL,2/3/18,15:00,Crystal Palace V Newcastle United ,Crystal Palace,Newcastle United
+EPL,2/3/18,15:00,Leicester City V Swansea City ,Leicester City,Swansea City
+EPL,2/3/18,15:00,Liverpool V Tottenham Hotspur ,Liverpool,Tottenham Hotspur
+EPL,2/3/18,15:00,Manchester United V Huddersfield Town ,Manchester United,Huddersfield Town
+EPL,2/3/18,15:00,Watford V Chelsea ,Watford,Chelsea
+EPL,2/3/18,15:00,West Bromwich Albion V Southampton ,West Bromwich Albion,Southampton
+EPL,2/10/18,15:00,Chelsea V West Bromwich Albion ,Chelsea,West Bromwich Albion
+EPL,2/10/18,15:00,Everton V Crystal Palace ,Everton,Crystal Palace
+EPL,2/10/18,15:00,Huddersfield Town V Bournemouth ,Huddersfield Town,Bournemouth
+EPL,2/10/18,15:00,Manchester City V Leicester City ,Manchester City,Leicester City
+EPL,2/10/18,15:00,Newcastle United V Manchester United ,Newcastle United,Manchester United
+EPL,2/10/18,15:00,Southampton V Liverpool ,Southampton,Liverpool
+EPL,2/10/18,15:00,Stoke City V Brighton & Hove Albion ,Stoke City,Brighton & Hove Albion
+EPL,2/10/18,15:00,Swansea City V Burnley ,Swansea City,Burnley
+EPL,2/10/18,15:00,Tottenham Hotspur V Arsenal ,Tottenham Hotspur,Arsenal
+EPL,2/10/18,15:00,West Ham United V Watford ,West Ham United,Watford
+EPL,2/24/18,15:00,Arsenal V Manchester City ,Arsenal,Manchester City
+EPL,2/24/18,15:00,Bournemouth V Newcastle United ,Bournemouth,Newcastle United
+EPL,2/24/18,15:00,Brighton & Hove Albion V Swansea City ,Brighton & Hove Albion,Swansea City
+EPL,2/24/18,15:00,Burnley V Southampton ,Burnley,Southampton
+EPL,2/24/18,15:00,Crystal Palace V Tottenham Hotspur ,Crystal Palace,Tottenham Hotspur
+EPL,2/24/18,15:00,Leicester City V Stoke City ,Leicester City,Stoke City
+EPL,2/24/18,15:00,Liverpool V West Ham United ,Liverpool,West Ham United
+EPL,2/24/18,15:00,Manchester United V Chelsea ,Manchester United,Chelsea
+EPL,2/24/18,15:00,Watford V Everton ,Watford,Everton
+EPL,2/24/18,15:00,West Bromwich Albion V Huddersfield Town ,West Bromwich Albion,Huddersfield Town
+EPL,3/3/18,15:00,Brighton & Hove Albion V Arsenal ,Brighton & Hove Albion,Arsenal
+EPL,3/3/18,15:00,Burnley V Everton ,Burnley,Everton
+EPL,3/3/18,15:00,Crystal Palace V Manchester United ,Crystal Palace,Manchester United
+EPL,3/3/18,15:00,Leicester City V Bournemouth ,Leicester City,Bournemouth
+EPL,3/3/18,15:00,Liverpool V Newcastle United ,Liverpool,Newcastle United
+EPL,3/3/18,15:00,Manchester City V Chelsea ,Manchester City,Chelsea
+EPL,3/3/18,15:00,Southampton V Stoke City ,Southampton,Stoke City
+EPL,3/3/18,15:00,Swansea City V West Ham United ,Swansea City,West Ham United
+EPL,3/3/18,15:00,Tottenham Hotspur V Huddersfield Town ,Tottenham Hotspur,Huddersfield Town
+EPL,3/3/18,15:00,Watford V West Bromwich Albion ,Watford,West Bromwich Albion
+EPL,3/10/18,15:00,Arsenal V Watford ,Arsenal,Watford
+EPL,3/10/18,15:00,Bournemouth V Tottenham Hotspur ,Bournemouth,Tottenham Hotspur
+EPL,3/10/18,15:00,Chelsea V Crystal Palace ,Chelsea,Crystal Palace
+EPL,3/10/18,15:00,Everton V Brighton & Hove Albion ,Everton,Brighton & Hove Albion
+EPL,3/10/18,15:00,Huddersfield Town V Swansea City ,Huddersfield Town,Swansea City
+EPL,3/10/18,15:00,Manchester United V Liverpool ,Manchester United,Liverpool
+EPL,3/10/18,15:00,Newcastle United V Southampton ,Newcastle United,Southampton
+EPL,3/10/18,15:00,Stoke City V Manchester City ,Stoke City,Manchester City
+EPL,3/10/18,15:00,West Bromwich Albion V Leicester City ,West Bromwich Albion,Leicester City
+EPL,3/10/18,15:00,West Ham United V Burnley ,West Ham United,Burnley
+EPL,3/17/18,15:00,Bournemouth V West Bromwich Albion ,Bournemouth,West Bromwich Albion
+EPL,3/17/18,15:00,Burnley V Chelsea ,Burnley,Chelsea
+EPL,3/17/18,15:00,Huddersfield Town V Crystal Palace ,Huddersfield Town,Crystal Palace
+EPL,3/17/18,15:00,Leicester City V Arsenal ,Leicester City,Arsenal
+EPL,3/17/18,15:00,Liverpool V Watford ,Liverpool,Watford
+EPL,3/17/18,15:00,Manchester City V Brighton & Hove Albion ,Manchester City,Brighton & Hove Albion
+EPL,3/17/18,15:00,Stoke City V Everton ,Stoke City,Everton
+EPL,3/17/18,15:00,Swansea City V Southampton ,Swansea City,Southampton
+EPL,3/17/18,15:00,Tottenham Hotspur V Newcastle United ,Tottenham Hotspur,Newcastle United
+EPL,3/17/18,15:00,West Ham United V Manchester United ,West Ham United,Manchester United
+EPL,3/31/18,15:00,Arsenal V Stoke City ,Arsenal,Stoke City
+EPL,3/31/18,15:00,Brighton & Hove Albion V Leicester City ,Brighton & Hove Albion,Leicester City
+EPL,3/31/18,15:00,Chelsea V Tottenham Hotspur ,Chelsea,Tottenham Hotspur
+EPL,3/31/18,15:00,Crystal Palace V Liverpool ,Crystal Palace,Liverpool
+EPL,3/31/18,15:00,Everton V Manchester City ,Everton,Manchester City
+EPL,3/31/18,15:00,Manchester United V Swansea City ,Manchester United,Swansea City
+EPL,3/31/18,15:00,Newcastle United V Huddersfield Town ,Newcastle United,Huddersfield Town
+EPL,3/31/18,15:00,Watford V Bournemouth ,Watford,Bournemouth
+EPL,3/31/18,15:00,West Bromwich Albion V Burnley ,West Bromwich Albion,Burnley
+EPL,3/31/18,15:00,West Ham United V Southampton ,West Ham United,Southampton
+EPL,4/7/18,15:00,Arsenal V Southampton ,Arsenal,Southampton
+EPL,4/7/18,15:00,Bournemouth V Crystal Palace ,Bournemouth,Crystal Palace
+EPL,4/7/18,15:00,Brighton & Hove Albion V Huddersfield Town ,Brighton & Hove Albion,Huddersfield Town
+EPL,4/7/18,15:00,Chelsea V West Ham United ,Chelsea,West Ham United
+EPL,4/7/18,15:00,Everton V Liverpool ,Everton,Liverpool
+EPL,4/7/18,15:00,Leicester City V Newcastle United ,Leicester City,Newcastle United
+EPL,4/7/18,15:00,Manchester City V Manchester United ,Manchester City,Manchester United
+EPL,4/7/18,15:00,Stoke City V Tottenham Hotspur ,Stoke City,Tottenham Hotspur
+EPL,4/7/18,15:00,Watford V Burnley ,Watford,Burnley
+EPL,4/7/18,15:00,West Bromwich Albion V Swansea City ,West Bromwich Albion,Swansea City
+EPL,4/14/18,15:00,Burnley V Leicester City ,Burnley,Leicester City
+EPL,4/14/18,15:00,Crystal Palace V Brighton & Hove Albion ,Crystal Palace,Brighton & Hove Albion
+EPL,4/14/18,15:00,Huddersfield Town V Watford ,Huddersfield Town,Watford
+EPL,4/14/18,15:00,Liverpool V Bournemouth ,Liverpool,Bournemouth
+EPL,4/14/18,15:00,Manchester United V West Bromwich Albion ,Manchester United,West Bromwich Albion
+EPL,4/14/18,15:00,Newcastle United V Arsenal ,Newcastle United,Arsenal
+EPL,4/14/18,15:00,Southampton V Chelsea ,Southampton,Chelsea
+EPL,4/14/18,15:00,Swansea City V Everton ,Swansea City,Everton
+EPL,4/14/18,15:00,Tottenham Hotspur V Manchester City ,Tottenham Hotspur,Manchester City
+EPL,4/14/18,15:00,West Ham United V Stoke City ,West Ham United,Stoke City
+EPL,4/21/18,15:00,Arsenal V West Ham United ,Arsenal,West Ham United
+EPL,4/21/18,15:00,Bournemouth V Manchester United ,Bournemouth,Manchester United
+EPL,4/21/18,15:00,Brighton & Hove Albion V Tottenham Hotspur ,Brighton & Hove Albion,Tottenham Hotspur
+EPL,4/21/18,15:00,Chelsea V Huddersfield Town ,Chelsea,Huddersfield Town
+EPL,4/21/18,15:00,Everton V Newcastle United ,Everton,Newcastle United
+EPL,4/21/18,15:00,Leicester City V Southampton ,Leicester City,Southampton
+EPL,4/21/18,15:00,Manchester City V Swansea City ,Manchester City,Swansea City
+EPL,4/21/18,15:00,Stoke City V Burnley ,Stoke City,Burnley
+EPL,4/21/18,15:00,Watford V Crystal Palace ,Watford,Crystal Palace
+EPL,4/21/18,15:00,West Bromwich Albion V Liverpool ,West Bromwich Albion,Liverpool
+EPL,4/28/18,15:00,Burnley V Brighton & Hove Albion ,Burnley,Brighton & Hove Albion
+EPL,4/28/18,15:00,Crystal Palace V Leicester City ,Crystal Palace,Leicester City
+EPL,4/28/18,15:00,Huddersfield Town V Everton ,Huddersfield Town,Everton
+EPL,4/28/18,15:00,Liverpool V Stoke City ,Liverpool,Stoke City
+EPL,4/28/18,15:00,Manchester United V Arsenal ,Manchester United,Arsenal
+EPL,4/28/18,15:00,Newcastle United V West Bromwich Albion ,Newcastle United,West Bromwich Albion
+EPL,4/28/18,15:00,Southampton V Bournemouth ,Southampton,Bournemouth
+EPL,4/28/18,15:00,Swansea City V Chelsea ,Swansea City,Chelsea
+EPL,4/28/18,15:00,Tottenham Hotspur V Watford ,Tottenham Hotspur,Watford
+EPL,4/28/18,15:00,West Ham United V Manchester City ,West Ham United,Manchester City
+EPL,5/5/18,15:00,Arsenal V Burnley ,Arsenal,Burnley
+EPL,5/5/18,15:00,Bournemouth V Swansea City ,Bournemouth,Swansea City
+EPL,5/5/18,15:00,Brighton & Hove Albion V Manchester United ,Brighton & Hove Albion,Manchester United
+EPL,5/5/18,15:00,Chelsea V Liverpool ,Chelsea,Liverpool
+EPL,5/5/18,15:00,Everton V Southampton ,Everton,Southampton
+EPL,5/5/18,15:00,Leicester City V West Ham United ,Leicester City,West Ham United
+EPL,5/5/18,15:00,Manchester City V Huddersfield Town ,Manchester City,Huddersfield Town
+EPL,5/5/18,15:00,Stoke City V Crystal Palace ,Stoke City,Crystal Palace
+EPL,5/5/18,15:00,Watford V Newcastle United ,Watford,Newcastle United
+EPL,5/5/18,15:00,West Bromwich Albion V Tottenham Hotspur ,West Bromwich Albion,Tottenham Hotspur
+EPL,5/13/18,15:00,Burnley V Bournemouth ,Burnley,Bournemouth
+EPL,5/13/18,15:00,Crystal Palace V West Bromwich Albion ,Crystal Palace,West Bromwich Albion
+EPL,5/13/18,15:00,Huddersfield Town V Arsenal ,Huddersfield Town,Arsenal
+EPL,5/13/18,15:00,Liverpool V Brighton & Hove Albion ,Liverpool,Brighton & Hove Albion
+EPL,5/13/18,15:00,Manchester United V Watford ,Manchester United,Watford
+EPL,5/13/18,15:00,Newcastle United V Chelsea ,Newcastle United,Chelsea
+EPL,5/13/18,15:00,Southampton V Manchester City ,Southampton,Manchester City
+EPL,5/13/18,15:00,Swansea City V Stoke City ,Swansea City,Stoke City
+EPL,5/13/18,15:00,Tottenham Hotspur V Leicester City ,Tottenham Hotspur,Leicester City
+EPL,5/13/18,15:00,West Ham United V Everton ,West Ham United,Everton
