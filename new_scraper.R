@@ -1,6 +1,6 @@
 library(rvest)
 library(tidyverse)
-#did this work
+
 #finding all gamecodes.
 list_of_month <- read_html('http://scores.nbcsports.com/epl/fixtures.asp')
 list_of_month <- as.integer(list_of_month %>% html_node('select') %>% html_nodes('option') %>% html_attr("value"))
@@ -201,9 +201,12 @@ rm(team_and_opp_rank,team_and_points)
 
 #joining combineddb
 combineddb = left_join(combineddb,lag_lookup, by= c("team_gameweek_id"))
+# loading team lookup and fixtures
+teamlookup = read.csv('TeamLookup.csv')
+fixtures = read.csv('EPL-Fixtures-2017-18-Excel.csv')
 
 # exporting data
 setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
-write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
+#write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
 
 beepr::beep(sound=1)
