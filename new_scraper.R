@@ -1,5 +1,7 @@
-library(rvest)
-library(tidyverse)
+# library(rvest)
+# library(tidyverse)
+#install.packages('stringr')
+#library(stringr)
 
 #finding all gamecodes.
 list_of_month <- read_html('http://scores.nbcsports.com/epl/fixtures.asp')
@@ -151,7 +153,7 @@ totals = aggregate(. ~ team, combineddb[,1:16], sum)
 totals$points = totalpoints$gameweek_points
 totals$Goals.Allowed = totalgoalsallowed$GoalsAllowed
 totals = inner_join(totals,teamlookup,by = c('team' = 'Abbreviation' ))
-totals = totals[c(1,19,2:18)]
+totals = totals[c(1,19,2:19)]
 remove(totalgoalsallowed)
 remove(totalpoints)
 
