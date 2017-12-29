@@ -5,6 +5,9 @@ library(stringr)
 library(dplyr)
 library(stringi)
 library(DescTools)
+# loading team lookup and fixtures
+teamlookup = read.csv('TeamLookup.csv')
+fixtures = read.csv('EPL-Fixtures-2017-18-Excel.csv')
 listofgamedates = c('20170811',
 '20170812',
 '20170813',
