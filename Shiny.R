@@ -9,8 +9,8 @@ library(extrafont)
 font_import(pattern="[H/h]umor")
 loadfonts()
 
-
-
+#fonttable()[1:45,]
+font = 'Comic Sans MS'
 #teamchoices = sort(unlist(as.list(unique(combineddb$team))))
 colnames(totals) = make.names(colnames(totals))
 columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]))))
@@ -36,10 +36,10 @@ server = function(input, output) {
   })
   p = reactive({ggplot(dataset(),aes_string(x=input$x, y=input$y))+
       theme_solarized(light = FALSE)+
-      theme(legend.position = "None",text=element_text(family="Comic Sans MS", size=14))+
+      theme(legend.position = "None",text=element_text(family=font, size=14))+
       #geom_point(size=5, shape = 16) +
       scale_color_hue(l=65, c=100)+
-      geom_text(aes(label = team, size = points, family = "Comic Sans MS", color = factor(clusters()$cluster))) +
+      geom_text(aes(label = team, size = points, family = font, color = factor(clusters()$cluster))) +
       scale_size(range = c(4, 10))})
   output$scatter = renderPlot(p())
   
@@ -49,9 +49,9 @@ server = function(input, output) {
   
   b = reactive({ggplot(standingstable(), aes_string('team', 'cumu_points')) + 
       theme_solarized(light = FALSE)+
-      geom_text(aes(label = team, color = cumu_points, family = "Comic Sans MS"))+
+      geom_text(aes(label = team, color = cumu_points, family = font))+
       scale_colour_gradientn(colors = terrain.colors(10))+
-      theme(legend.position = "None",text=element_text(family="Comic Sans MS", size=14))+
+      theme(legend.position = "None",text=element_text(family=font, size=14))+
       scale_y_continuous(breaks = seq(0,100, by=3)) +
       geom_segment(aes(x=team, 
                        xend= team,
