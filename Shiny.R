@@ -35,10 +35,19 @@ server = function(input, output) {
     combineddb[combineddb$game_week == input$week,c('team','cumu_points')]
   })
   
-  b = reactive({ggplot(standingstable(),aes_string('cumu_points', 'team'))+
-      #geom_point(size=5, shape = 16) +
-      scale_color_hue(l=65, c=100)+
-      geom_text(aes(label = team, color = team))})
+  b = reactive({ggplot(standingstable(), aes_string('team', 'cumu_points')) + 
+      geom_point(col="tomato2", size=3) +   # Draw points
+      geom_segment(aes(x=team, 
+                       xend= team,
+                       y=0,
+                       yend = cumu_points),
+                   linetype="dashed", 
+                   size=0.1) +   # Draw dashed lines
+      labs(title="EPL Standings", 
+           subtitle="2017-18") +  
+      coord_flip(ylim = c(0, 120))
+  })
+  
   output$standings = renderPlot(b())
   
   clusters <- reactive({
