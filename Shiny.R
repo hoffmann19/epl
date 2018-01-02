@@ -1,13 +1,13 @@
-library(shiny)
-library(shinythemes)
-# install.packages('DT')
-library(DT)
-library(ggplot2)
-library(ggthemes)
-#install.packages("extrafont")
-library(extrafont)
-font_import(pattern="[H/h]umor")
-loadfonts()
+# library(shiny)
+# library(shinythemes)
+# # install.packages('DT')
+# library(DT)
+# library(ggplot2)
+# library(ggthemes)
+# #install.packages("extrafont")
+# library(extrafont)
+# font_import(pattern="[H/h]umor")
+# loadfonts()
 
 #fonttable()[1:45,]
 font = 'Comic Sans MS'
@@ -17,6 +17,7 @@ columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]
 
 
 ui <- fluidPage(theme = shinytheme("superhero"),
+                titlePanel(title=div(img(src="epl logo.png"),"EPL Analysis",windowTitle = 'EPL by the Numbers')),
                 selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
                 selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
                 numericInput('clusters', 'Cluster count', 4, min = 1, max = 9),
@@ -44,12 +45,16 @@ server = function(input, output) {
   output$scatter = renderPlot(p())
   
   standingstable = reactive({
-    combineddb[combineddb$game_week == input$week,c('team','cumu_points')]
+    #combineddb[order(combineddb[combineddb$game_week == input$week,c('team','cumu_points')],combineddb$cumu_points, decreasing = TRUE),]
+    subset(combineddb, game_week ==input$week,c('team','cumu_points'))[order(subset(combineddb, game_week ==input$week)$cumu_points,decreasing = TRUE),]
+
   })
-  
+
   b = reactive({ggplot(standingstable(), aes_string('team', 'cumu_points')) + 
       theme_solarized(light = FALSE)+
       geom_text(aes(label = team, color = cumu_points, family = font))+
+      geom_hline(yintercept=standingstable()$cumu_points[4], colour = 'white',linetype = 8)+
+      geom_hline(yintercept=standingstable()$cumu_points[18], colour = 'tomato',linetype = 8)+
       scale_colour_gradientn(colors = terrain.colors(10))+
       theme(legend.position = "None",text=element_text(family=font, size=14))+
       scale_y_continuous(breaks = seq(0,100, by=3)) +
