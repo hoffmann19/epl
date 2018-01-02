@@ -4,20 +4,21 @@ library(shinythemes)
 library(DT)
 library(ggplot2)
 library(ggthemes)
+
 #teamchoices = sort(unlist(as.list(unique(combineddb$team))))
 colnames(totals) = make.names(colnames(totals))
 columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]))))
 
 
 ui <- fluidPage(theme = shinytheme("superhero"),
-  selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
-  selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
-  numericInput('clusters', 'Cluster count', 4, min = 1, max = 9),
-  dataTableOutput('mytable'),
-  plotOutput('scatter'),
-  sliderInput('week','Select Gameweek', min = 1,max = 38,value = 1,step = 1),
-  plotOutput('standings')
-  
+                selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
+                selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
+                numericInput('clusters', 'Cluster count', 4, min = 1, max = 9),
+                dataTableOutput('mytable'),
+                plotOutput('scatter'),
+                sliderInput('week','Select Gameweek', min = 1,max = 38,value = 1,step = 1),
+                plotOutput('standings')
+                
 )
 
 server = function(input, output) {
@@ -44,6 +45,7 @@ server = function(input, output) {
       #geom_point(col="tomato2", size=3, label='team') +   # Draw points
       theme_solarized(light = FALSE)+
       geom_text(aes(label = team, color = cumu_points))+
+      scale_colour_gradientn(colors = terrain.colors(10))+
       theme(legend.position = "None")+
       scale_y_continuous(breaks = seq(0,120, by=3)) +
       geom_segment(aes(x=team, 
@@ -53,7 +55,8 @@ server = function(input, output) {
                    linetype="dashed", 
                    size=0.1) +   # Draw dashed lines
       labs(title="EPL Standings", 
-           subtitle="2017-18") +  
+           subtitle="2017-18") +
+      xlab('Team') + ylab('Points')+
       coord_flip(ylim = c(0, 120))
   })
   
