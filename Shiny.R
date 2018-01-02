@@ -2,9 +2,11 @@ library(shiny)
 # install.packages('DT')
 library(DT)
 library(ggplot2)
+library(ggthemes)
 #teamchoices = sort(unlist(as.list(unique(combineddb$team))))
 colnames(totals) = make.names(colnames(totals))
 columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]))))
+
 
 ui <- fluidPage(
   selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
@@ -25,6 +27,8 @@ server = function(input, output) {
     totals[,c(input$x,input$y)] 
   })
   p = reactive({ggplot(dataset(),aes_string(x=input$x, y=input$y))+
+      theme_solarized(light = FALSE)+
+      theme(legend.position="none")+
       #geom_point(size=5, shape = 16) +
       scale_color_hue(l=65, c=100)+
       geom_text(aes(label = team, size = points, color = factor(clusters()$cluster))) +
@@ -37,6 +41,8 @@ server = function(input, output) {
   
   b = reactive({ggplot(standingstable(), aes_string('team', 'cumu_points')) + 
       geom_point(col="tomato2", size=3) +   # Draw points
+      scale_y_continuous(breaks = seq(1,120, by=3)) +
+      theme_economist()+scale_colour_economist()+
       geom_segment(aes(x=team, 
                        xend= team,
                        y=0,
