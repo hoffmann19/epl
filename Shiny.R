@@ -40,8 +40,9 @@ server = function(input, output) {
   })
   
   b = reactive({ggplot(standingstable(), aes_string('team', 'cumu_points')) + 
-      geom_point(col="tomato2", size=3) +   # Draw points
-      scale_y_continuous(breaks = seq(1,120, by=3)) +
+      #geom_point(col="tomato2", size=3, label='team') +   # Draw points
+      geom_text(aes(label = team))+
+      scale_y_continuous(breaks = seq(0,120, by=3)) +
       theme_economist()+scale_colour_economist()+
       geom_segment(aes(x=team, 
                        xend= team,
