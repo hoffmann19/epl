@@ -1,4 +1,5 @@
 library(shiny)
+library(shinythemes)
 # install.packages('DT')
 library(DT)
 library(ggplot2)
@@ -8,7 +9,7 @@ colnames(totals) = make.names(colnames(totals))
 columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]))))
 
 
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("superhero"),
   selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
   selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
   numericInput('clusters', 'Cluster count', 4, min = 1, max = 9),
@@ -40,9 +41,11 @@ server = function(input, output) {
   })
   
   b = reactive({ggplot(standingstable(), aes_string('team', 'cumu_points')) + 
-      geom_point(col="tomato2", size=3) +   # Draw points
-      scale_y_continuous(breaks = seq(1,120, by=3)) +
-      theme_economist()+scale_colour_economist()+
+      #geom_point(col="tomato2", size=3, label='team') +   # Draw points
+      theme_solarized(light = FALSE)+
+      geom_text(aes(label = team, color = cumu_points))+
+      theme(legend.position = "None")+
+      scale_y_continuous(breaks = seq(0,120, by=3)) +
       geom_segment(aes(x=team, 
                        xend= team,
                        y=0,
