@@ -11,7 +11,9 @@ ui <- fluidPage(
   selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
   numericInput('clusters', 'Cluster count', 4, min = 1, max = 9),
   dataTableOutput('mytable'),
-  plotOutput('scatter')
+  plotOutput('scatter'),
+  sliderInput('week','Select Gameweek', min = 1,max = 38,value = 1,step = 1),
+  plotOutput('standings')
   
 )
 
@@ -29,12 +31,20 @@ server = function(input, output) {
       scale_size(range = c(4, 10))})
   output$scatter = renderPlot(p())
   
+  standingstable = reactive({
+    combineddb[combineddb$game_week == input$week,c('team','cumu_points')]
+  })
+  
+  b = reactive({ggplot(standingstable(),aes_string('cumu_points', 'team'))+
+      #geom_point(size=5, shape = 16) +
+      scale_color_hue(l=65, c=100)+
+      geom_text(aes(label = team, color = team))})
+  output$standings = renderPlot(b())
+  
   clusters <- reactive({
     kmeans(dataset()[,3:4],input$clusters, 
            nstart = 20)
   })
   
-  
 }
-
 shinyApp(ui = ui, server = server)

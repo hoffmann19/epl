@@ -1,7 +1,7 @@
-# library(rvest)
-# library(tidyverse)
+library(rvest)
+library(tidyverse)
 #install.packages('stringr')
-#library(stringr)
+library(stringr)
 
 #finding all gamecodes.
 list_of_month <- read_html('http://scores.nbcsports.com/epl/fixtures.asp')
@@ -214,7 +214,7 @@ teamlookup = read.csv('TeamLookup.csv')
 fixtures = read.csv('EPL-Fixtures-2017-18-Excel.csv')
 
 # exporting data
-setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
+#setwd("/Users/admin/Dropbox/dataprojects/epl/exports")
 #write.csv(combineddb, file = paste0(Sys.Date(),"_df.csv"))
 
 beepr::beep(sound=1)
