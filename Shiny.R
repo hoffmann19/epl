@@ -17,7 +17,7 @@ columnlist = sort(unlist(as.list(colnames(totals[,c(2:length(colnames(totals)))]
 
 
 ui <- fluidPage(theme = shinytheme("superhero"),
-                titlePanel(title=div(img(src="epl logo.png"),"EPL Analysis",windowTitle = 'EPL by the Numbers')),
+                titlePanel(title=div(img(src="epl logo.png"),"detlef schrempf rules!"),windowTitle = 'EPL 720'),
                 selectInput('x','Choose your X axis',choices = columnlist,selected = 'Goals'),
                 selectInput('y','Choose your Y axis',choices = columnlist, selected = 'Passes'),
                 numericInput('clusters', 'Cluster count', 4, min = 1, max = 9),
